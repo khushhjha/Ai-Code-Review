@@ -2,7 +2,7 @@ services:
   - type: web
     name: ai-code-review
     env: static
-    buildCommand: npm ci && npx react-scripts build
+    buildCommand: npm ci && npm run build
     staticPublishPath: ./build
     envVars:
       - key: CI
