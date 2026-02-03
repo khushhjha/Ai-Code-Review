@@ -8,4 +8,4 @@ services:
       - key: CI
         value: false
       - key: NODE_VERSION
-        value: 18
+        value: 20
