@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-code-review
+    env: static
+    buildCommand: npm ci && npx react-scripts build
+    staticPublishPath: ./build
+    envVars:
+      - key: CI
+        value: false
+      - key: NODE_VERSION
+        value: 18
